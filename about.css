@@ -1,0 +1,731 @@
+/*==========================================
+        GOOGLE FONT
+==========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==========================================
+            RESET
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF7FA;
+    color:#222;
+    overflow-x:hidden;
+}
+
+
+/*==========================================
+            VARIABLES
+==========================================*/
+
+:root{
+
+    --primary:#2B2798;
+    --secondary:#504BE2;
+    --text:#222;
+    --gray:#666;
+    --white:#fff;
+
+}
+
+
+/*==========================================
+            HEADER
+==========================================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:72px;
+
+    z-index:999;
+
+    background:rgba(255,255,255,.90);
+
+    backdrop-filter:blur(18px);
+
+    transition:.3s;
+
+}
+
+.navbar{
+
+    width:88%;
+
+    max-width:1380px;
+
+    height:65px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:1.2rem;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:38px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#000000;
+
+    font-size:1.1rem;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover,
+.nav-links .active{
+
+    color:var(--primary);
+
+}
+
+.nav-right{
+font-size: 15px;
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+
+/*==========================================
+            BUTTONS
+==========================================*/
+
+.primary-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:13px 28px;
+
+    background:linear-gradient(135deg,#2B2798,#514CE4);
+
+    color:white;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:
+    0 12px 30px rgba(43,39,152,.18);
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:13px 28px;
+
+    border:2px solid #2B2798;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#2B2798;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#2B2798;
+
+    color:white;
+
+}
+
+
+/*==========================================
+            ABOUT HERO
+==========================================*/
+
+.about-page{
+
+    width:90%;
+
+    max-width:1380px;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    padding-top:90px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.about-left{
+
+    max-width:560px;
+
+}
+
+.about-left span{
+
+    color:#2B2798;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    font-size:1.1rem;
+
+}
+
+.about-left h1{
+
+    margin:16px 0;
+
+    font-size:3.5rem;
+
+    line-height:1.08;
+
+    font-weight:600;
+    color: #000000;
+
+}
+
+.about-left p{
+
+    font-size:1rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.about-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+
+/*==========================================
+            IMAGE
+==========================================*/
+
+.about-right{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-right img{
+
+    width:560px;
+border-radius: 50px;
+    max-width:100%;
+
+    /* animation:float 5s ease infinite; */
+
+    filter:drop-shadow(0 25px 45px rgba(43,39,152,.12));
+
+}
+
+
+/*==========================================
+        FLOAT ANIMATION
+==========================================*/
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-14px);
+
+}
+
+}
+
+
+/*==========================================
+        STATS SECTION
+==========================================*/
+
+.stats{
+
+    width:90%;
+
+    max-width:1380px;
+
+    margin:60px auto 100px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card h2{
+
+    font-size:2.4rem;
+
+    color:#2B2798;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#666;
+
+    font-size:.95rem;
+
+}
+/*==========================================
+            MOBILE MENU
+==========================================*/
+
+.menu{
+    display:none;
+    font-size:28px;
+    color:var(--primary);
+    cursor:pointer;
+}
+
+
+/*==========================================
+        NAVBAR SHADOW
+==========================================*/
+
+header.scrolled{
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+
+/*==========================================
+        HOVER EFFECTS
+==========================================*/
+
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after{
+
+    width:100%;
+
+}
+
+.primary-btn:hover{
+
+    box-shadow:
+    0 20px 40px rgba(43,39,152,.25);
+
+}
+
+.stat-card:hover{
+
+    box-shadow:
+    0 18px 45px rgba(43,39,152,.15);
+
+}
+
+
+/*==========================================
+        RESPONSIVE 1200px
+==========================================*/
+
+@media(max-width:1200px){
+
+.about-page{
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+.about-left h1{
+
+font-size:3rem;
+
+}
+
+.about-right img{
+
+width:500px;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+/*==========================================
+        RESPONSIVE 992px
+==========================================*/
+
+@media(max-width:992px){
+
+.about-page{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+padding-top:110px;
+
+gap:50px;
+
+}
+
+.about-right{
+
+order:-1;
+
+}
+
+.about-right img{
+
+width:420px;
+
+}
+
+.about-left{
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+.about-left p{
+
+margin-bottom:30px;
+
+}
+
+.about-buttons{
+
+justify-content:center;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+margin-top:50px;
+
+}
+
+}
+
+
+
+/*==========================================
+        RESPONSIVE 768px
+==========================================*/
+
+@media(max-width:768px){
+
+.menu{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:72px;
+
+left:-100%;
+
+width:100%;
+
+background:white;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:25px;
+
+padding:30px 0;
+
+transition:.4s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.nav-right .primary-btn{
+
+display:none;
+
+}
+
+.about-page{
+
+width:92%;
+
+}
+
+.about-left h1{
+
+font-size:2.5rem;
+
+}
+
+.about-right img{
+
+width:330px;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.stat-card{
+
+padding:25px;
+
+}
+
+}
+
+
+
+/*==========================================
+        RESPONSIVE 576px
+==========================================*/
+
+@media(max-width:576px){
+
+.logo{
+
+font-size:1.8rem;
+
+}
+
+.about-left h1{
+
+font-size:2rem;
+
+}
+
+.about-left p{
+
+font-size:.95rem;
+
+}
+
+.about-buttons{
+
+flex-direction:column;
+
+}
+
+.about-buttons a{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.about-right img{
+
+width:270px;
+
+}
+
+.stat-card h2{
+
+font-size:2rem;
+
+}
+
+}
+
+
+
+/*==========================================
+        EXTRA SMALL
+==========================================*/
+
+@media(max-width:380px){
+
+.about-left h1{
+
+font-size:1.7rem;
+
+}
+
+.about-left p{
+
+font-size:.9rem;
+
+}
+
+.about-right img{
+
+width:230px;
+
+}
+
+.stat-card{
+
+padding:20px;
+
+}
+
+}

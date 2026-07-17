@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense | Spendly</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="add-expense.css">
+
+</head>
+<body>
+
+<!--======================
+        SIDEBAR
+=======================-->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <h2>Spendly</h2>
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="add-expense.html">
+                <i class="fa-regular fa-square-plus"></i>
+                <span>Add Expense</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Budget</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-regular fa-file-lines"></i>
+                <span>Reports</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Goals</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-list"></i>
+                <span>Categories</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="bottom-menu">
+
+        <a href="#">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+
+        <div class="profile">
+
+            <img src="images/profile.jpg" alt="Profile">
+
+            <div>
+
+                <h4>Alex Student</h4>
+
+                <small>Student</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!--======================
+        MAIN
+=======================-->
+
+<main class="main-content">
+
+    <!-- Mobile Menu -->
+
+    <div class="mobile-header">
+
+        <button id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <h2>Add Expense</h2>
+
+    </div>
+
+
+
+    <section class="expense-card">
+
+        <div class="card-header">
+
+            <h1>Add Expense</h1>
+
+            <p>Record your daily expenses easily.</p>
+
+        </div>
+
+
+        <form id="expenseForm">
+
+            <!-- Date -->
+
+            <div class="input-group">
+
+                <label>Date</label>
+
+                <div class="input-icon">
+
+                    <input
+                        type="date"
+                        id="date"
+                        required>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Category -->
+
+            <div class="input-group">
+
+                <label>Category</label>
+
+                <div class="input-icon">
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option>Food</option>
+
+                        <option>Transportation</option>
+
+                        <option>Education</option>
+
+                        <option>Shopping</option>
+
+                        <option>Entertainment</option>
+
+                        <option>Bills</option>
+
+                        <option>Other</option>
+
+                    </select>
+
+                    <i class="fa-solid fa-angle-down"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Description -->
+
+            <div class="input-group">
+
+                <label>Description</label>
+
+                <textarea
+                    id="description"
+                    rows="4"
+                    placeholder="Enter expense description"
+                    required></textarea>
+
+            </div>
+
+
+
+            <!-- Amount -->
+
+            <div class="input-group">
+
+                <label>Amount (Rs.)</label>
+
+                <div class="input-icon">
+
+                    <input
+                        type="number"
+                        id="amount"
+                        placeholder="Enter amount"
+                        required>
+
+                    <i class="fa-solid fa-coins"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Button -->
+
+            <button
+                type="submit"
+                class="save-btn">
+
+                <i class="fa-regular fa-floppy-disk"></i>
+
+                Save Expense
+
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="add-expense.js"></script>
+
+</body>
+</html>
