@@ -1,0 +1,748 @@
+/*=========================================
+            GOOGLE FONT
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+                RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF7F8;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/*=========================================
+            VARIABLES
+=========================================*/
+
+:root{
+
+    --primary:#2B2798;
+    --secondary:#4D47DA;
+    --white:#fff;
+    --gray:#666;
+    --border:#ddd;
+    --shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+/*=========================================
+                HEADER
+=========================================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(18px);
+
+    z-index:999;
+
+}
+
+.navbar{
+
+    width:88%;
+
+    max-width:1380px;
+
+    margin:auto;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.logo{
+
+    font-size:1.2rem;
+
+    font-weight:800;
+
+    color:var(--primary);
+    text-decoration: none;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:38px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#000000;
+font-weight: 500;
+    font-size:1.1rem;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+.primary-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(135deg,#2B2798,#4D47DA);
+
+    padding:13px 28px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+            SIGNUP SECTION
+=========================================*/
+
+.signup-container{
+
+    width:90%;
+
+    max-width:1380px;
+
+    margin:110px auto 40px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+    min-height:calc(100vh - 110px);
+
+}
+
+/*=========================================
+            LEFT
+=========================================*/
+
+.signup-content{
+
+    max-width:470px;
+
+}
+
+.signup-content h1{
+
+    font-size:1.8rem;
+
+    margin-bottom: 2px;
+
+}
+
+.signup-content p{
+
+    color:var(--gray);
+
+    margin-bottom:15px;
+
+}
+
+.input-box{
+
+    margin-bottom:20px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    font-weight:500;
+
+}
+
+.input-field{
+
+    position:relative;
+
+}
+
+.input-field i:first-child{
+
+    position:absolute;
+
+    left:14px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--primary);
+
+}
+
+.input-field input{
+
+    width:100%;
+
+    padding:13px 49px 13px 44px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-family:Poppins;
+
+    transition:.3s;
+
+}
+
+.input-field input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(43,39,152,.08);
+
+}
+
+.toggle-password{
+
+    position:absolute;
+
+    right:45px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#666;
+
+}
+
+.terms{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:15px 0 25px;
+
+}
+
+.terms a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+}
+
+.signup-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.signup-btn:hover{
+
+    background:var(--secondary);
+
+}
+
+/*=========================================
+        SOCIAL LOGIN
+=========================================*/
+
+.divider{
+
+    text-align:center;
+
+    margin:30px 0;
+
+    color:#777;
+
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    width:35%;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.divider::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    width:35%;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.social-login{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.social-login button{
+
+    flex:1;
+
+    border:1px solid #ddd;
+
+    background:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.social-login button:hover{
+
+    border-color:var(--primary);
+
+}
+
+.social-login i{
+
+    margin-right:8px;
+
+}
+
+.login-link{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.login-link a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/*=========================================
+            RIGHT
+=========================================*/
+
+.signup-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.signup-image img{
+
+    width:560px;
+
+    max-width:100%;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+/*=========================================
+            BUTTON EFFECTS
+=========================================*/
+
+.primary-btn,
+.signup-btn,
+.social-login button{
+    transition:all .3s ease;
+}
+
+.primary-btn:hover,
+.signup-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(43,39,152,.25);
+}
+
+.social-login button:hover{
+    background:#f8f8ff;
+    transform:translateY(-2px);
+}
+
+/*=========================================
+            INPUT HOVER
+=========================================*/
+
+.input-field input:hover{
+    border-color:#2B2798;
+}
+
+.terms input{
+    accent-color:#2B2798;
+}
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+/* -------- Laptop -------- */
+
+@media(max-width:1200px){
+
+.signup-container{
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+.signup-image img{
+
+width:470px;
+
+}
+
+.signup-content h1{
+
+font-size:2.7rem;
+
+}
+
+}
+
+
+/* -------- Tablet -------- */
+
+@media(max-width:992px){
+
+.navbar{
+
+width:94%;
+
+}
+
+.signup-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:50px;
+
+margin-top:100px;
+
+}
+
+.signup-image{
+
+order:-1;
+
+}
+
+.signup-image img{
+
+width:420px;
+
+}
+
+.signup-content{
+
+margin:auto;
+
+max-width:520px;
+
+}
+
+.social-login{
+
+justify-content:center;
+
+}
+
+.terms{
+
+justify-content:center;
+
+}
+
+}
+
+
+/* -------- Mobile -------- */
+
+@media(max-width:768px){
+
+.menu-btn{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:75px;
+
+left:-100%;
+
+width:100%;
+
+background:#fff;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:30px 0;
+
+gap:25px;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.primary-btn{
+
+display:none;
+
+}
+
+.signup-container{
+
+width:92%;
+
+margin-top:90px;
+
+}
+
+.signup-content h1{
+
+font-size:2.3rem;
+
+}
+
+.signup-image img{
+
+width:320px;
+
+}
+
+.social-login{
+
+flex-direction:column;
+
+}
+
+}
+
+
+/* -------- Small Mobile -------- */
+
+@media(max-width:576px){
+
+.logo{
+
+font-size:1.7rem;
+
+}
+
+.signup-content h1{
+
+font-size:2rem;
+
+}
+
+.signup-content p{
+
+font-size:.95rem;
+
+}
+
+.input-field input{
+
+padding:13px 45px;
+
+font-size:14px;
+
+}
+
+.signup-btn{
+
+padding:14px;
+
+font-size:15px;
+
+}
+
+.signup-image img{
+
+width:260px;
+
+}
+
+.login-link{
+
+font-size:.9rem;
+
+}
+
+}
+
+
+/*=========================================
+        CUSTOM SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2B2798;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
